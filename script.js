@@ -6,7 +6,7 @@ const setAmPm = document.querySelector("#am-pm");
 const setAlarmButton = document.querySelector("#submitButton");
 const alarmContainer = document.querySelector("#alarms-container");
 
-// Adding Hours, Minutes, Seconds in DropDown Menu
+// Adding Hours, Minutes and Seconds in Dropdown Menu
 window.addEventListener("DOMContentLoaded", (event) => {
   
   dropDownMenu(1, 12, setHours);
@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   fetchAlarm();
 });
 
-// Event Listener added to Set Alarm Button
+// Event Listener included to Set Alarm Button
 setAlarmButton.addEventListener("click", getInput);
 
 
@@ -63,7 +63,7 @@ function getInput(e) {
   setAlarm(alarmTime);
 }
 
-// Converting time to 24 hour format
+// Converting time to 24 hour 
 function convertToTime(hour, minute, second, amPm) {
   return `${parseInt(hour)}:${minute}:${second} ${amPm}`;
 }
@@ -83,7 +83,7 @@ function setAlarm(time, fetching = false) {
   }
 }
 
-// Alarms set by user Dislayed in HTML
+// Alarms set by user
 function addAlaramToDom(time, intervalId) {
   const alarm = document.createElement("div");
   alarm.classList.add("alarm", "mb", "d-flex");
@@ -97,7 +97,7 @@ function addAlaramToDom(time, intervalId) {
   alarmContainer.prepend(alarm);
 }
 
-// Is alarms saved in Local Storage?
+// check alarms saved 
 function checkAlarams() {
   let alarms = [];
   const isPresent = localStorage.getItem("alarms");
@@ -106,7 +106,7 @@ function checkAlarams() {
   return alarms;
 }
 
-// save alarm to local storage
+// save alarm 
 function saveAlarm(time) {
   const alarms = checkAlarams();
 
@@ -114,7 +114,7 @@ function saveAlarm(time) {
   localStorage.setItem("alarms", JSON.stringify(alarms));
 }
 
-// Fetching alarms from local storage
+// Fetching alarms
 function fetchAlarm() {
   const alarms = checkAlarams();
 
