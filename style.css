@@ -113,14 +113,6 @@
     box-shadow: burlywood 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
   }
   
-  .page-title{
-    background-color: #0E141B;
-    align-items: center;
-    text-align: center;
-    color: rgb(247, 247, 236);
-    
-  }
-
   
   /* style of devices of screen size less than 768px */
   @media only screen and (min-width: 600px) {
