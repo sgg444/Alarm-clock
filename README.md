@@ -18,3 +18,5 @@ Create an alarm clock. Use ONLY vanilla javascript, no libraries or frameworks a
 
 4. Delete alarm
  For each alarm give a delete button to delete the alarm. When the user deletes an alarm make sure it “does not alerts the user”.
+
+--Demo link: https://sgg444.github.io/Alarm-clock/
